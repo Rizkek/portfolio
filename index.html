@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portofolio</title>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/NEW.png" class="logo" />
+                    <ul id="slidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portofolio">Portofolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bard" onclick="openmenu()"></i>
+                </nav>
+                <div class="header text">
+                    <p>Designer</p>
+                    <h1>Hi, I am <span class="name">Rizqy</span><br />From Klaten, Jawa Tengah </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/27 2.jpg" /> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Saya berasal dari SMK Multimedia, pernah magang di sebuah studio yaitu Studio E&E.
+                        Sekarang saya menempuh di Universitas Pendidikan Indonesia dengan jurusan Rekayasa Perangkat Lunak.
+                        Pada saat itu saya belajar bagaimana cara membuat sebuah design logo, poster, kemasan, dan mockup baju.
+                        Saya juga belajar tentang pembuatan sebuah video iklan, pemotretan dan mengedit foto, dan mengenal desain UI/UX
+                        Sesudah saya lulus dari SMK, saya pernah bekerja di Almira Bakul Akrilik.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p> 
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Designer</span><br />Design Logo, Poster, Kemasan, and Mockup Baju</li>
+                            <li><span>UI/UX</span><br />Design Web</li>
+                            <li><span>Video and Photography</span><br />Video iklan, Pemotretan dan Mengedit Photo</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 Mei - 2023 Juli</span><br />Bekerja di ALmira Bakul Akrilik</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 Agustus - sekarang</span><br />Menempuh pendidikan di Universitas Pendidikan Indonesia</li>
+                            <li><span>2022 Januari - 2022 April</span><br />Magang di Studio E&E</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>  
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>  
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>Design</h2>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>  
+                    <i class="fa-brands fa-"></i>
+                    <h2>UI UX</h2>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mockup fix-01.jpg" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum
+                        </p>
+                        <a href="#"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/me.jpg" />
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>
+                            Lorem ipsum
+                        </p>
+                        <a href="#"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Logo_Kelompok[1].png" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum
+                        </p>
+                        <a href="#"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> riskiinferno@gmail.com </p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> 0895417240107 </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Rizki Fadetra" target="_self"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/username" target="_self"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/traa.rizz" target="_self"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/Rizki Fadetra" target="_self"><i class="fab fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="images/CV Saya.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © rizqy. Made With <i class="fa-solid fa-heart"></i> by Detra 
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
